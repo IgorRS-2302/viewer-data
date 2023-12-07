@@ -1,19 +1,19 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
-import { cilChart, cilGroup, cilMusicNote } from '@coreui/icons'
+import { cilChart, cilMusicNote } from '@coreui/icons'
 import { CNavItem } from '@coreui/react'
 
 const _nav = [
-  {
-    component: CNavItem,
-    name: 'Comparar',
-    to: '/comparar',
-    icon: <CIcon icon={cilGroup} customClassName="nav-icon" />,
-    // badge: {
-    //   color: 'info',
-    //   text: 'NEW',
-    // },
-  },
+  // {
+  //   component: CNavItem,
+  //   name: 'Comparar',
+  //   to: '/comparar',
+  //   icon: <CIcon icon={cilGroup} customClassName="nav-icon" />,
+  //   // badge: {
+  //   //   color: 'info',
+  //   //   text: 'NEW',
+  //   // },
+  // },
   // {
   //   component: CNavTitle,
   //   name: 'Theme',
@@ -26,8 +26,8 @@ const _nav = [
   },
   {
     component: CNavItem,
-    name: 'Artistas',
-    to: '/artistas',
+    name: 'Playlist',
+    to: '/playlist',
     icon: <CIcon icon={cilMusicNote} customClassName="nav-icon" />,
   },
   // {
