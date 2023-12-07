@@ -25,7 +25,9 @@ const Dashboard = () => {
                         <a href="#/ranking">Visualizar o ranking de músicas mais tocadas</a>
                       </li>
                       <li>
-                        <a href="#/playlist">Ver os dados de seu artista preferido</a>
+                        <a href="#/playlist">
+                          Gerar uma playlist baseada numa música de sua escolha
+                        </a>
                       </li>
                     </ul>
                   </div>

@@ -15,12 +15,16 @@ const Artists = () => {
   const [data, setData] = useState('')
   const [recomendados, setRecomendados] = useState('')
 
-  const gerarPlaylist = () => {
-    const body = {
-      track: data,
-    }
+  const gerarPlaylist = async () => {
+    try {
+      const response = await axios.post('http://127.0.0.1:5000/recommended', {
+        track: data,
+      })
 
-    axios.post('http://127.0.0.1:5000/recomended', body).then((res) => setRecomendados(res.data))
+      setRecomendados(response.data)
+    } catch (error) {
+      console.error('Erro ao gerar a playlist:', error.message)
+    }
   }
 
   return (
